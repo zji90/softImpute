@@ -1,5 +1,5 @@
 
-softImpute=function(x, rank.max = 2,lambda=0, type=c("als","svd"),thresh = 1e-05, maxit=100,trace.it=FALSE,warm.start=NULL,final.svd=TRUE){
+softImpute=function(x, rank.max = 2,lambda=0, type=c("als","svd"),thresh = 1e-05, maxit=10000,trace.it=FALSE,warm.start=NULL,final.svd=TRUE){
    if(rank.max > (rmax<-min(dim(x))-1)){
      rank.max=rmax
      warning(paste("rank.max should not exceed min(dim(x))-1; changed to ",rmax))
