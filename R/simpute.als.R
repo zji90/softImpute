@@ -1,4 +1,4 @@
-simpute.als<-function (x, J = 2, thresh = 1e-05,lambda=0,maxit=100,trace.it=TRUE, warm.start=NULL, final.svd=TRUE) 
+simpute.als<-function (x, J = 2, thresh = 1e-05,lambda=0,maxit=10000,trace.it=TRUE, warm.start=NULL, final.svd=TRUE) 
 {### x is a matrix, possibly with NAs
     n <- dim(x)
     m <- n[2]
